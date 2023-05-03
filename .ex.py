@@ -411,11 +411,11 @@ def all_progres():
 
 	# ---> apa aja
 	if ro =='la' or ro =='la':
-		metode.append("new")
+		metode.append("new");list_pas()
 
 	# ---> acync
 	elif ro =='Ac' or ro =='ac':
-		metode.append("acy")
+		metode.append("acy");list_pas()
 
 	# ---> unkwon
 	elif ro =='1' or ro =='01':
@@ -426,13 +426,13 @@ def all_progres():
 		console.print(Columns(xtc))
 		xtc = console.input(f" {H2}•{P2} pilihan : {rich_cerah}")
 		if xtc =='1' or xtc =='01':
-			metode.append("unk_m")
+			metode.append("unk_m");list_pas()
 		elif xtc =='2' or xtc =='02':
-			metode.append("unk_b")
+			metode.append("unk_b");list_pas()
 		elif xtc =='3' or xtc =='03':
-			metode.append("unk_f")
+			metode.append("unk_f");list_pas()
 		else:
-			sleep(3);atur_atur()
+			sleep(3);all_progres()
 
 	# ---> validate
 	elif ro =='2' or ro =='02':
@@ -443,13 +443,13 @@ def all_progres():
 		console.print(Columns(xtc))
 		xtc = console.input(f" {H2}•{P2} pilihan : {rich_cerah}")
 		if xtc =='1' or xtc =='01':
-			metode.append("val_m")
+			metode.append("val_m");list_pas()
 		elif xtc =='2' or xtc =='02':
-			metode.append("val_b")
+			metode.append("val_b");list_pas()
 		elif xtc =='3' or xtc =='03':
-			metode.append("val_f")
+			metode.append("val_f");list_pas()
 		else:
-			sleep(3);atur_atur()
+			sleep(3);all_progres()
 
 	# ---> reguler
 	elif ro =='3' or ro =='03':
@@ -460,26 +460,22 @@ def all_progres():
 		console.print(Columns(xtc))
 		xtc = console.input(f" {H2}•{P2} pilihan : {rich_cerah}")
 		if xtc =='1' or xtc =='01':
-			metode.append("reg_m")
+			metode.append("reg_m");list_pas()
 		elif xtc =='2' or xtc =='02':
-			metode.append("reg_b")
+			metode.append("reg_b");list_pas()
 		elif xtc =='3' or xtc =='03':
-			metode.append("reg_f")
+			metode.append("reg_f");list_pas()
 		else:
-			sleep(3);atur_atur()
+			sleep(3);all_progres()
 
-		# ---> id crack otomatis
-		for x in dump:
-			xx = random.randint(0,len(id))
-			id.insert(xx,x)
-
+def list_pas():
 	# ---> send cp to flame
 	print(panel(f"[italic bold white]         send checkpoint results to owner change {M2}y{P2}/{H2}n",width=70,style=f"{rich_gelap}"))
 	send = input(f' {H}• {P}pilihan :{color} ')
 	if send =='Y' or send =='y':
 		send2.append('ya')
 
-	# ---> aplikasi terkait
+	# ---> send live to flame
 	print(panel(f"[italic bold white]             send live results to owner change {M2}y{P2}/{H2}n",width=70,style=f"{rich_gelap}"))
 	send = input(f' {H}• {P}pilihan :{color} ')
 	if send =='Y' or send =='y':
